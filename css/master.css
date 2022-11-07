@@ -1,0 +1,476 @@
+@font-face {
+
+    font-family: cerebri sans;
+    src: url(../fonts/IRANSans_Light.ttf);
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden!important;
+    overflow-y: auto !important;
+}
+body {
+    --bg-gray: #f0f0f0;
+    --light-gray: #cfd4da;
+    --middle-gray: #bcbcbc;
+    --more-gray: #92979d;
+    --gray: #6c757e;
+    --orange: #fe7e13;
+    --red: #ea2f42;
+
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cerebri sans;
+    background-color: var(--bg-gray);
+    font-size: 1rem;
+}
+.search {
+    direction: ltr;
+}
+.search input:focus{
+    color: var(--gray);
+    font-size: 0.85rem;    
+}
+.search .input-group input,
+.search .input-group .input-group-text,
+.header-top button {
+    border-radius: 15px;
+    border: 1px solid var(--light-gray);
+}
+.header-top {
+    border-color: var(--middle-gray) !important;
+}
+.bg-warning {
+    background-color: var(--orange) !important;
+    color: var(--bg-gray);
+}
+.badge-danger {
+    /* background-color: var(--red) !important;
+    color: var(--bg-gray); */
+    margin-right: 9.5px;
+}
+.text-warning{
+    color: var(--orange) !important;
+}
+.search .form-control::placeholder {
+    color: var(--middle-gray);
+    opacity: 1; /* Firefox */
+}
+.header-top .fa.fa-user,
+.header-top .fa.fa-shopping-cart{
+    color: var(--middle-gray) !important;
+}
+.header-menu .fa-caret-down{
+    margin-right: 0.75rem !important;
+    padding-right: 0 !important;
+}
+.header-menu .fa-phone,
+.header-menu .fa-info-circle{
+    font-size: 1.5rem !important;
+    text-shadow: 0 0 2px #333;
+    color:  var(--bg-gray)  !important;
+}
+
+/* Style the tab */
+
+/* .tab-content {
+    top: 3.7%;
+    z-index: 5000;
+    right: 2.4%;
+    border-radius: 25px;
+    width: 68%;
+} */
+.carousel-inner .btn-default{
+    background-color: #b19848 !important;
+    border-radius: 25px;
+    position: absolute;
+    z-index:10;
+    top:74%;
+    left: 5.4%;
+}
+.body-top-left .circle-span {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 3px solid var(--red);
+    border-radius: 50%;
+    float: left;
+    margin-left: 2%;
+}
+.body-top-left .rounded ,
+.product-slider .rounded ,
+.masters .card.rounded ,
+.phd .card.rounded ,
+.hoghugh .card.rounded ,
+.estekhdami .card.rounded ,
+.kasbokar .card.rounded ,
+.best-sellers .card.rounded ,
+.four-box-banner .card.rounded ,
+.two-box-banner .card.rounded ,
+.one-box-banner .card.rounded {
+    border-radius: 25px !important; 
+    cursor: pointer;
+}
+.body-top-left .card-text {
+    border-bottom: 1px solid var(--middle-gray);
+}
+.body-top-left .card-body,
+.body-top-left .card-img-top {
+    cursor: pointer;
+}
+.old-price{
+    text-decoration:line-through;
+    font-weight: normal;
+}
+
+.discount .text-height-3{
+    line-height: 150%;
+}
+.discount .btn-outline-warning:hover {
+    background-color: var(--orange);
+}
+.discount .btn-outline-warning ,
+.four-box-banner .btn ,
+.two-box-banner  .btn,
+.one-box-banner .btn { 
+    border: 1px solid var(--bg-gray);
+    border-radius: 12px;
+}
+.carousel-gradient{
+    position:absolute;
+    z-index: 330 ;
+    margin-top: 0px;
+    width: inherit; height: 58.1vh!important;
+    background-image : linear-gradient(to left,  transparent, #ea2f42  20%);
+}
+.opacity-50 {
+    opacity: 0.4;
+    filter: blur(0.8px);
+    -webkit-filter: blur(0.8px);
+}
+/* crr-time */
+@import url("https://fonts.googleapis.com/css?family=Lalezar");
+body {
+  background-color: #f6f6f6;
+  color: #333;
+  font-family: "Lalezar", tahoma, Arial, sans-serif;
+  line-height: 1.42857;
+}
+#demo {
+  direction: rtl;
+  text-align: center;
+  margin: 2em 0;
+}
+/**********************************************************/
+
+.best-sellers-title.border-bottom {
+    border-bottom: 1px solid var(--orange) !important;
+}
+.best-sellers .text-muted.border-bottom {
+    border-bottom: 2px solid var(--orange) !important;
+
+}
+
+.opacity-25 {
+    opacity: 0.5;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+.see-all-btn {
+    top:44%;
+    left: 3.2%;
+    border-radius: 15px !important;
+}
+.see-all-btn .btn-warning {
+    background-color: var(--orange) !important;
+}
+.masters ,
+.phd ,
+.hoghugh ,
+.estekhdami ,
+.kasbokar {
+    height: 80vh !important;
+}
+.masters-sidebar ,
+.phd-sidebar ,
+.hoghugh-sidebar,
+.estekhdami-sidebar,
+.kasbokar-sidebar{
+    top: 3%;
+    right: 2%;
+    width: 20% !important;
+    z-index: 500;
+    border-radius: 20px;
+    height: 70vh;
+
+}
+.masters-back {
+    background-color:  #daebf2;
+}
+.masters-sidebar{
+    background-color: #61c6f2;
+}
+.sidebar ul li {
+    /* position: relative;
+    height: 60px; */
+}
+
+.menu-pointer {
+    width: 273px;
+    height: 50px;
+    position: relative;
+    background: #52a7cc;
+    margin-left: -30px;
+    margin-left: 20px !important;
+    display: block;
+    z-index: 9000;
+    padding-top:10px;
+    overflow-y: hidden !important;
+    border: 1px solid #333;
+  }
+  .menu-pointer::after{
+    content: " ";
+    padding: 20px;
+    border-radius: 0.65rem;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    top: 8%;
+    right: 83%;
+    position: absolute;
+    background-color: #c266cb;
+    border-width: 0 30px 30px 0;
+  }
+
+.four-box-banner .btn-light {
+    top: 66%;
+    right: 55%;
+    padding-left: 35px !important;
+    height: 25%;
+    overflow-y: hidden !important;
+}
+.four-box-banner  span ,
+.two-box-banner span ,
+.one-box-banner span { 
+    display: inline-block;
+    margin-right: -10px !important;
+    font-size: .74rem;
+    padding-top: 3px;
+}
+.four-box-banner  span::after ,
+.two-box-banner span::after ,
+.one-box-banner span::after {
+   content: " ";
+   display: inline-block;
+   width: 27px;
+   height: 27px;
+   border-radius: 50px;
+   position: absolute;
+   top: 10%;
+   right: 72.6%;
+}
+.four-box-banner .pink-box::after{
+    border: 5px solid #fbdfdc;
+    background-color: #ef8f93;
+}
+.four-box-banner .blue-box::after ,
+.two-box-banner .blue-box::after {
+    border: 5px solid #e5f1fd;
+    background-color: #9cd0e6;
+}
+.four-box-banner .green-box::after{
+    border: 5px solid #dae4d9;
+    background-color: #849f74;
+}
+.four-box-banner .purple-box::after ,
+.one-box-banner .purple-box::after {
+    border: 5px solid #e3e2e7;
+    background-color: #a0a2af;
+}
+.four-box-banner .fa.fa-arrow-left ,
+.two-box-banner .fa.fa-arrow-left ,
+.one-box-banner .fa.fa-arrow-left {
+    font-size: .8rem;
+    color: #fbdfdc !important;
+    position: absolute;
+    right: 80%;
+    top: 33%;
+}
+.two-box-banner .fa.fa-arrow-left {
+    top: 32%;
+}
+.two-box-banner .btn-light {
+    top: 77%;
+    right: 76%;
+    padding-left: 35px !important;
+    height: 13%;
+    overflow-y: hidden !important;
+    border-radius: 12px;
+}
+.phd-back {
+    background-color:  #f0daf1;
+}
+.phd-sidebar-ground{
+    height: 70vh;
+    top: 3.5%;
+    right: 2%;
+    width: 18.5vw !important;
+    z-index: 400;
+    border-radius: 20px;
+    background-color: #e879f2;
+}
+.phd-sidebar .current{
+    background-color: #c266cb;
+    width: 265px;
+}
+.phd-sidebar .current::after {
+    content: " ";
+    padding: 12.75px;
+    border-radius: 0.65rem;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    top: 0.5%;
+    right: 90.5%;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 auto;
+    z-index: 2500;
+    border: solid #c266cb;
+    background-color: #c266cb;
+    border-width: 0 15px 15px 0;
+}
+.two-box-banner .yellow-box::after {
+    border: 5px solid #f3e7b3;
+    background-color: #c3a418;
+}
+
+.hoghugh-back {
+    background-color:  #daf2da;
+}
+.hoghugh-sidebar-ground{
+    height: 71vh;
+    top: 3.5%;
+    right: 2%;
+    width: 18.5vw !important;
+    z-index: 400;
+    border-radius: 20px;
+    background-color: #54d054;
+}
+.hoghugh-sidebar{
+    top:0%;
+    width: 19% !important;
+    padding-right: 1.5%;
+}
+.hoghugh-sidebar .current{
+    background-color: #48b148;
+    width: 265px;
+}
+.hoghugh-sidebar .current::after {
+    content: " ";
+    padding: 12.75px;
+    border-radius: 0.65rem;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    top: 0.5%;
+    right: 90.5%;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 auto;
+    z-index: 2500;
+    border: solid #48b148  ;
+    background-color: #48b148;
+    border-width: 0 15px 15px 0;
+}
+.one-box-banner .btn-light {
+    top: 37%;
+    right: 88%;
+    padding-left: 35px !important;
+    height: 24%;
+    overflow-y: hidden !important;
+    border-radius: 12px;
+}
+.estekhdami-back {
+    background-color:  #f3e0da;
+}
+.estekhdami-sidebar-ground{
+    height: 70vh;
+    top: 3.5%;
+    right: 2%;
+    width: 18.5vw !important;
+    z-index: 400;
+    border-radius: 20px;
+    background-color: #e58668;
+}
+.estekhdami-sidebar{
+    top: 4%;
+}
+.estekhdami-sidebar .current{
+    background-color: #da5c36;
+    width: 265px;
+}
+.estekhdami-sidebar .current::after {
+    content: " ";
+    padding: 12.75px;
+    border-radius: 0.65rem;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    top: 0.5%;
+    right: 90.5%;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 auto;
+    z-index: 2500;
+    border: solid #da5c36  ;
+    background-color: #da5c36;
+    border-width: 0 15px 15px 0;
+}
+.kasbokar-back {
+    background-color:  #dadaf2;
+}
+.kasbokar-sidebar{
+    right: 2%;
+}
+.kasbokar-sidebar-ground{
+    height: 70vh;
+    top: 3.5%;
+    right: 2%;
+    width: 18.5vw !important;
+    z-index: 400;
+    border-radius: 20px;
+    background-color: #706df2;
+}
+.kasbokar-sidebar .current{
+    background-color: #5452cd;
+    width: 265px;
+}
+.kasbokar-sidebar .current::after {
+    content: " ";
+    padding: 12.75px;
+    border-radius: 0.65rem;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    top: 0.5%;
+    right: 90.5%;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 auto;
+    z-index: 2500;
+    border: solid #5452cd  ;
+    background-color: #5452cd;
+    border-width: 0 15px 15px 0;
+}
+.footer{
+  background-color: #e5ecf2;  
+}
+.footer .most-visited li{
+    padding: 8px 0 ;
+    cursor: pointer;
+}
+.most-visited .nav-item:hover ,
+.info-arshad .nav-link:hover {
+    color: var(--orange) !important;
+}
