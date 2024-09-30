@@ -2,40 +2,33 @@ $(document).ready(function () {
     let time= document.getElementById('crr-time');
     setInterval(() => {
       let d = new Date();
-      time.innerHTML = d.toLocaleTimeString('fa-IR');
+      time.innerHTML = d.toLocaleTimeString('en-US');
     },1000)
     document.getElementById("crr-time").style.display = "inline";
 /***************/
 
-$(".masters ul li").click(function(){
+$(".employment ul li").hover(function(){
   
-  if ( $("li").hasClass ("active") ){
-     $("li").removeClass( "active" )
+  if ( $("li").hasClass ("menu-pointer") ){
+     $("li").removeClass( "menu-pointer" )
     }
     
-    $(this).addClass("active");
+    $(this).addClass("menu-pointer");
     // $("li").addClass("active-arr");}
     console.log( $(this))
   
 });
 
+
+
 /*****submenu of header********/
-
-
-// $(".header-menu a").click(function(){
-  
-  // if ( $(".tab-content").hasClass ("d-block") ){
-  //    $(".tab-content").removeClass( "d-block" )
-  //   }
-    
-//     $(".tab-content").addClass("d-block");
-//     console.log( $(this))
-  
-// });
-
-
-
-
+$(".header-menu a#navbarDropdown").click(function(){
+    if ($('.dropdown-menu').hasClass('d-block')){
+    $(".dropdown-menu").removeClass("d-block");
+  } else {
+    $(".dropdown-menu").addClass("d-block");
+  }
+});
 
 
 });
